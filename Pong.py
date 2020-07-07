@@ -1,5 +1,7 @@
 import turtle
 import time
+import sys
+
 
 win = turtle.Screen()
 win.title("Pong")
@@ -11,6 +13,9 @@ win.tracer(0)
 game_point = 3
 score_a = 0
 score_b = 0
+Game_speed= 0.2
+
+
 def reset_score():
     return 0
 
@@ -41,8 +46,8 @@ pong.color("white")
 pong.shapesize(stretch_wid=0.3, stretch_len=0.3)
 pong.penup()
 pong.goto(0,0)
-pong.dx = 0.2
-pong.dy = 0.2
+pong.dx = Game_speed
+pong.dy = Game_speed
 
 #Pen 
 pen = turtle.Turtle()
@@ -85,6 +90,7 @@ win.onkeypress(paddle_l_up,"w")
 win.onkeypress(paddle_l_down,"s")
 win.onkeypress(paddle_r_up,"Up")
 win.onkeypress(paddle_r_down,"Down")
+#win.onkeypress(sys.exit(),"Q")
 
 
 #main loop
