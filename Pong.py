@@ -10,10 +10,10 @@ win.setup(width=800,height=600)
 win.tracer(0)
 
 #Score
-game_point = 3
+game_point = 3 # Sets the Game_Point
+Game_speed= 0.2 # Sets the Game_speed
 score_a = 0
 score_b = 0
-Game_speed= 0.2
 
 
 def reset_score():
