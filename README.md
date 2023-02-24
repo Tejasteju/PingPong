@@ -1,4 +1,4 @@
-# Just a easy two-player pong game
+# Just an easy two-player pong game
 ---
 You can change the **game speed** and **game point** by changing the values in the code. 
 Added some minor features.
